@@ -1,0 +1,6 @@
+{
+  "name": "Aura Lifestyle Magazine",
+  "description": "A refined, minimalist online lifestyle publication introducing slow living, architectural spaces, culinary arts, and wellness, with curated articles and a clean editorial aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-primary-cream: #FDFBF7;
+  --color-primary-charcoal: #2C2C2C;
+  --color-muted-olive: #8C8273;
+  --color-sage-green: #5A5A40;
+  --color-warm-accent: #A67C52;
+  --color-border-subtle: #EAE7E0;
+}
+
+/* Base Editorial Styling */
+body {
+  background-color: var(--color-primary-cream);
+  color: var(--color-primary-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: var(--color-warm-accent);
+  color: white;
+}
+
+/* Custom scrollbar to keep it sleek */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4cfc3;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-warm-accent);
+}
+
+/* Typography styles */
+.magazine-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+.editorial-body {
+  font-family: var(--font-serif);
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+/* Elegant borders */
+.border-editorial {
+  border-color: var(--color-border-subtle);
+}
+
+.divider-line {
+  height: 1px;
+  background-color: var(--color-border-subtle);
+  width: 100%;
+}
+
+.divider-line-double {
+  height: 4px;
+  border-top: 1px solid var(--color-primary-charcoal);
+  border-bottom: 1px solid var(--color-primary-charcoal);
+  width: 100%;
+}
